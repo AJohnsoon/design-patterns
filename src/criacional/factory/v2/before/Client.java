@@ -1,8 +1,32 @@
 package src.criacional.factory.v2.before;
 
-import src.criacional.factory.v2.before.model.*;
+import src.criacional.factory.v2.utils.entities.*;
+import src.criacional.factory.v2.utils.model.*;
 
 public class Client {
+	public static void main(String[] args){
+
+		System.out.println("1º)\n");
+
+		Client client = new Client();
+		System.out.println("### Ordering an iPhone XS");
+		IPhone iphoneX = client.orderItem("x", "highEnd");
+		System.out.println(iphoneX);
+
+		System.out.println("\n _______________________ \n");
+
+		System.out.println("### Ordering an iPhone11");
+		IPhone iphone11 = client.orderItem("11", "highEnd");
+		System.out.println(iphone11);
+
+		System.out.println("\n _______________________ \n");
+
+		System.out.println("### Ordering an iPhone11");
+		IPhone iphoneSE = client.orderItem("SE", "standard");
+		System.out.println(iphoneSE);
+
+	}
+
 	public IPhone orderItem(String generation, String level){
 		IPhone device = null;
 
@@ -33,25 +57,5 @@ public class Client {
 		device.pack();
 
 		return device;
-	}
-
-	public static void main(String[] args){
-		Client client = new Client();
-		System.out.println("### Ordering an iPhone XS");
-		IPhone iphoneX = client.orderItem("x", "highEnd");
-		System.out.println(iphoneX);
-
-		System.out.println("\n _______________________ \n");
-
-		System.out.println("### Ordering an iPhone11");
-		IPhone iphone11 = client.orderItem("11", "highEnd");
-		System.out.println(iphone11);
-
-		System.out.println("\n _______________________ \n");
-
-		System.out.println("### Ordering an iPhone11");
-		IPhone iphoneSE = client.orderItem("SE", "standard");
-		System.out.println(iphoneSE);
-
 	}
 }

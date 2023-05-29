@@ -1,6 +1,8 @@
-package src.criacional.factory.v2.before.model;
+package src.criacional.factory.v2.utils.entities;
 
-public class IPhoneXS extends IPhone{
+import src.criacional.factory.v2.utils.model.IPhone;
+
+public class IPhoneXS extends IPhone {
 
 	@Override
 	public void getHardware() {

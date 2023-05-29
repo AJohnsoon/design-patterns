@@ -1,6 +1,8 @@
-package src.criacional.factory.v2.before.model;
+package src.criacional.factory.v2.utils.entities;
 
-public class IPhoneSE extends IPhone{
+import src.criacional.factory.v2.utils.model.IPhone;
+
+public class IPhoneSE extends IPhone {
 	@Override
 	public void getHardware() {
 		System.out.println("Hardware list");

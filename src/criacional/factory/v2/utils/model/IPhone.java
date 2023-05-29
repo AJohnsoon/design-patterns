@@ -1,4 +1,4 @@
-package src.criacional.factory.v2.before.model;
+package src.criacional.factory.v2.utils.model;
 
 public abstract class IPhone {
 
