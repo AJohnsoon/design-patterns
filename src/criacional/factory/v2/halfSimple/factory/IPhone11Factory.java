@@ -4,7 +4,7 @@ import src.criacional.factory.v2.utils.entities.IPhone11;
 import src.criacional.factory.v2.utils.entities.IPhone11Pro;
 import src.criacional.factory.v2.utils.model.IPhone;
 
-public class IPhone11Factory extends PhoneFactory{
+public class IPhone11Factory extends IPhoneFactory{
 
     public IPhone createIPhone(String model) {
         if(model.equalsIgnoreCase("standard")){

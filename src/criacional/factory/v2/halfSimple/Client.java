@@ -3,14 +3,14 @@ package src.criacional.factory.v2.halfSimple;
 import src.criacional.factory.v2.halfSimple.factory.IPhone11Factory;
 import src.criacional.factory.v2.halfSimple.factory.IPhoneSEFactory;
 import src.criacional.factory.v2.halfSimple.factory.IPhoneXFactory;
-import src.criacional.factory.v2.halfSimple.factory.PhoneFactory;
+import src.criacional.factory.v2.halfSimple.factory.IPhoneFactory;
 import src.criacional.factory.v2.utils.model.IPhone;
 
 public class Client {
     public static void main(String[] args){
-        PhoneFactory iphone11 = new IPhone11Factory();
-        PhoneFactory iphonex = new IPhoneXFactory();
-        PhoneFactory iphonese = new IPhoneSEFactory();
+        IPhoneFactory iphone11 = new IPhone11Factory();
+        IPhoneFactory iphonex = new IPhoneXFactory();
+        IPhoneFactory iphonese = new IPhoneSEFactory();
 
         System.out.println("\t IPHONE X");
         IPhone iPhonex = iphonex.createIPhoneModel("standard");

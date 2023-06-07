@@ -7,7 +7,7 @@ import src.criacional.factory.v2.utils.entities.IPhoneX;
 import src.criacional.factory.v2.utils.entities.IPhoneXS;
 import src.criacional.factory.v2.utils.model.IPhone;
 
-public class IPhoneFactory {
+public class IPhoneSimpleFactory {
     
     public static IPhone createIPhoneItem(String generation, String model){
         IPhone device = null;

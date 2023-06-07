@@ -2,7 +2,7 @@ package src.criacional.factory.v2.halfSimple.factory;
 
 import src.criacional.factory.v2.utils.model.IPhone;
 
-public abstract class PhoneFactory {
+public abstract class IPhoneFactory {
 
     public IPhone createIPhoneModel(String modelName){
         IPhone phone = null;
