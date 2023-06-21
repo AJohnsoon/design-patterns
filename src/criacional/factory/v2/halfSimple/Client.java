@@ -8,12 +8,12 @@ import src.criacional.factory.v2.utils.model.IPhone;
 
 public class Client {
     public static void main(String[] args){
-        IPhoneFactory iphone11 = new IPhone11Factory();
-        IPhoneFactory iphonex = new IPhoneXFactory();
-        IPhoneFactory iphonese = new IPhoneSEFactory();
+        IPhoneFactory iPhone11Factory = new IPhone11Factory();
+        IPhoneFactory iPhoneXFactory = new IPhoneXFactory();
+        IPhoneFactory iPhoneSEFactory = new IPhoneSEFactory();
 
         System.out.println("\t IPHONE X");
-        IPhone iPhonex = iphonex.createIPhoneModel("standard");
+        IPhone iPhonex = iPhoneXFactory.createIPhoneModel("standard");
         iPhonex.getHardware();
         iPhonex.assemble();
         System.out.println(iPhonex);
@@ -21,14 +21,14 @@ public class Client {
         System.out.println("\n ######################################################### \n");
         System.out.println("\t IPHONE 11");
 
-        IPhone iPhone11 = iphone11.createIPhoneModel("highEnd");
+        IPhone iPhone11 = iPhone11Factory.createIPhoneModel("highEnd");
         iPhone11.getHardware();
         iPhone11.pack();
         System.out.println(iPhone11);
 
         System.out.println("\n ######################################################### \n");
         System.out.println("\t IPHONE SE");
-        IPhone iPhoneSE = iphonese.createIPhoneModel("");
+        IPhone iPhoneSE = iPhoneSEFactory.createIPhoneModel("");
         iPhoneSE.getHardware();
         iPhoneSE.certificates();
         System.out.println(iPhoneSE);
