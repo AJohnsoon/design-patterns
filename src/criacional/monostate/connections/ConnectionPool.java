@@ -1,19 +1,18 @@
-package src.criacional.singleton.v2.monostate.connections;
+package src.criacional.monostate.connections;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ConnectionPool {
 	private final static int POOL_SIZE = 2;
-	private static List<Connection> connectionsPool;
+	private static List<Connection> connections;
 
 	static {
 		System.out.println("Creating connection pool");
-		connectionsPool = new ArrayList<>();
+		connections = new ArrayList<>();
 		for(int i=0; i < POOL_SIZE; i++){
-			connectionsPool.add(new Connection());
+			connections.add(new Connection());
 		}
-
 	}
 
 	public ConnectionPool(){
@@ -23,7 +22,7 @@ public class ConnectionPool {
 	public Connection getConnection(){
 		Connection connection = null;
 
-		for(Connection conn : connectionsPool){
+		for(Connection conn : connections){
 			if(!conn.isInUse()){
 				connection = conn;
 				break;

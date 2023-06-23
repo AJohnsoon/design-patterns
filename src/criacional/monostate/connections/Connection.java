@@ -1,4 +1,4 @@
-package src.criacional.singleton.v2.monostate.connections;
+package src.criacional.monostate.connections;
 
 public class Connection {
 	private boolean inUse;

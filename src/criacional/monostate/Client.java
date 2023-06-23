@@ -1,8 +1,8 @@
-package src.criacional.singleton.v2.monostate;
+package src.criacional.monostate;
 
 
-import src.criacional.singleton.v2.monostate.connections.Connection;
-import src.criacional.singleton.v2.monostate.connections.ConnectionPool;
+import src.criacional.monostate.connections.Connection;
+import src.criacional.monostate.connections.ConnectionPool;
 
 public class Client {
 	public static void main(String[] args) {
@@ -17,6 +17,8 @@ public class Client {
 
 		if(conn != null)
 			conn.query("SELECT * FROM TABLE1");
+//		assert conn != null;
+//		pool.leaveConnection(conn);
 	}
 
 	public static void doQuery2(){
