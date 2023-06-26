@@ -1,17 +1,14 @@
 package src.criacional.monostate.connections;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ConnectionPool {
 	private final static int POOL_SIZE = 2;
-	private static List<Connection> connections;
+	private static Connection[] connections;
 
 	static {
 		System.out.println("Creating connection pool");
-		connections = new ArrayList<>();
-		for(int i=0; i < POOL_SIZE; i++){
-			connections.add(new Connection());
+		connections = new Connection[POOL_SIZE];
+		for (int i=0; i < POOL_SIZE; i++) {
+			connections[i] = new Connection();
 		}
 	}
 
@@ -19,16 +16,16 @@ public class ConnectionPool {
 		System.out.println("New instance of Connection Pool");
 	}
 
-	public Connection getConnection(){
+	public Connection getConnection() {
 		Connection connection = null;
 
-		for(Connection conn : connections){
-			if(!conn.isInUse()){
+		for (Connection conn : connections) {
+			if (!conn.isInUse()){
 				connection = conn;
 				break;
 			}
 		}
-		if(connection == null){
+		if (connection == null) {
 			System.out.println("No connections available!");
 			return null;
 		}
@@ -36,7 +33,7 @@ public class ConnectionPool {
 		return connection;
 	}
 
-	public void leaveConnection(Connection conn){
+	public void leaveConnection(Connection conn) {
 		conn.setInUse(false);
 	}
 

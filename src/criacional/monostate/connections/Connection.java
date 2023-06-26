@@ -7,7 +7,7 @@ public class Connection {
 		this.inUse = false;
 	}
 
-	public Object query(String sql){
+	public Object query(String sql) {
 		System.out.println("Running '"+ sql + "' in connection " + this.inUse);
 		return null;
 	}
