@@ -1,26 +1,18 @@
 package src.criacional.builder.fluent.model;
 
 public class FastFoodMeal {
-	private String drink;
 	private String main;
+	private String drink;
 	private String side;
 	private String dessert;
 	private String gift;
 
-	public FastFoodMeal(String drink, String main, String side, String dessert, String gift) {
-		this.drink = drink;
+	public FastFoodMeal(String main, String drink, String side, String dessert, String gift) {
 		this.main = main;
+		this.drink = drink;
 		this.side = side;
 		this.dessert = dessert;
 		this.gift = gift;
-	}
-
-	public String getDrink() {
-		return drink;
-	}
-
-	public void setDrink(String drink) {
-		this.drink = drink;
 	}
 
 	public String getMain() {
@@ -29,6 +21,14 @@ public class FastFoodMeal {
 
 	public void setMain(String main) {
 		this.main = main;
+	}
+
+	public String getDrink() {
+		return drink;
+	}
+
+	public void setDrink(String drink) {
+		this.drink = drink;
 	}
 
 	public String getSide() {
