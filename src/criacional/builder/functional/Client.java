@@ -4,7 +4,8 @@ import src.criacional.builder.functional.model.FastFoodMeal;
 
 public class Client {
     public static void main(String[] args) {
-        System.out.println("Apenas Principal \n");
+        System.out.println("______________________");
+        System.out.println("Apenas Principal");
         FastFoodMeal onlyMain = new FastFoodMeal.Builder("X-Bacon").thatIsAll();
         System.out.println(onlyMain);
 

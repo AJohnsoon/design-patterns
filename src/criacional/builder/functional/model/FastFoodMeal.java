@@ -1,51 +1,17 @@
 package src.criacional.builder.functional.model;
 
-public class FastFoodMeal {
-
-    private final String main;
-	private final String drink;
-	private final String side;
-	private final String dessert;
-	private final String gift;
-    
-    public FastFoodMeal(String main, String drink, String side, String dessert, String gift) {
-        this.main = main;
-        this.drink = drink;
-        this.side = side;
-        this.dessert = dessert;
-        this.gift = gift;
-    }
-
-    public String getMain() {
-        return main;
-    }
-
-    public String getDrink() {
-        return drink;
-    }
-
-    public String getSide() {
-        return side;
-    }
-
-    public String getDessert() {
-        return dessert;
-    }
-
-    public String getGift() {
-        return gift;
-    }
+public record FastFoodMeal(String main, String drink, String side, String dessert, String gift) {
 
     @Override
-	public String toString() {
-		return "FastFoodMeal\n{" +
-				"\n 	main:'" + main + '\'' +
-				"\n 	drink:'" + drink + '\'' +
-				"\n 	side:'" + side + '\'' +
-				"\n 	dessert:'" + dessert + '\'' +
-				"\n 	gift:'" + gift + '\'' +
-				"\n}";
-	}
+    public String toString() {
+        return "FastFoodMeal\n{" +
+                "\n 	main:'" + main + '\'' +
+                "\n 	drink:'" + drink + '\'' +
+                "\n 	side:'" + side + '\'' +
+                "\n 	dessert:'" + dessert + '\'' +
+                "\n 	gift:'" + gift + '\'' +
+                "\n}";
+    }
 
 
     public static class Builder {
@@ -64,7 +30,7 @@ public class FastFoodMeal {
             this.drink = drink;
             return this;
         }
-        
+
         public Builder andSide(String side) {
             this.side = side;
             return this;
@@ -81,7 +47,7 @@ public class FastFoodMeal {
         }
 
         public FastFoodMeal thatIsAll() {
-            return new FastFoodMeal(main, drink, side, dessert, gift);
+            return new FastFoodMeal( main, drink, side, dessert, gift );
         }
     }
 }
