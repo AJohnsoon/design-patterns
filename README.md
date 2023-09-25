@@ -3,7 +3,7 @@
 
 ## Padrão Criacional
 
----
+<br>
 
 ##### *Factory Method*
     Padrão que fornece uma 'interface' para criar objetos em uma
@@ -13,8 +13,8 @@
 ---
 
 ##### *Abstract Factory*
-    Padrão que permite que você produza famílias de objetos relacionados s
-    em ter que especificar suas classes concretas.
+    Padrão que permite que você produza famílias de objetos relacionados sem 
+    ter que especificar suas classes concretas.
 
 ---
 
@@ -28,5 +28,18 @@
     Padrão que tem como objetivo criar um objeto a partir de um protótipo.
     Um objeto existente que já tenha um conjunto de atributos definidos, para
     a partir dessa premissa poder começar a evoluir o objeto.
+
+---
+
+
+
+## Padrão Estrutural
+
+<br>
+
+##### *Adapter*
+    Padrão que tem como objetivo converter a interface de uma classe em outra interface
+    esperada pelo cliente. O Adapter permite a cominicação entre classes que não poderiam
+    trabalhar juntas devido à incompatibilidade de suas interfaces
 
 ---
