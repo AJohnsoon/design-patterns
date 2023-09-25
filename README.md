@@ -39,7 +39,7 @@
 
 ##### *Adapter*
     Padrão que tem como objetivo converter a interface de uma classe em outra interface
-    esperada pelo cliente. O Adapter permite a cominicação entre classes que não poderiam
+    esperada pelo cliente. O Adapter permite a comunicação entre classes que não poderiam
     trabalhar juntas devido à incompatibilidade de suas interfaces
 
 ---
