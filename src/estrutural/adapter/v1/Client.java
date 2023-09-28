@@ -18,7 +18,7 @@ public class Client {
 
 
         OldMonitor monitorVGA = new OldMonitor();
-//        pc1.connectPort(monitorVGA);
+        //pc1.connectPort(monitorVGA);
         pc1.connectPort(new HDMIToVGAAdapter(monitorVGA));
         pc1.sendImageAndSound("Cat and rainbow", "Nyan cat song");
 
