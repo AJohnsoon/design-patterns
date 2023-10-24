@@ -7,16 +7,16 @@ import java.util.Map;
 
 public class Client {
     public static void main(String[] args) {
-        UserController restApi = new UserController();
+        UserController restController = new UserController();
         Map<String, String> payload = new LinkedHashMap<>();
 
         payload.put("name", "Alex Green");
         payload.put("email", "alexgren@email.com");
         payload.put("password", "pwd123");
-        Integer statusCode = restApi.saveUser(payload);
+        Integer statusCode = restController.saveUser(payload);
         System.out.println("statusCode: "+ statusCode);
 
-        statusCode = restApi.listAllUsers();
+        statusCode = restController.listAllUsers();
         System.out.println("\n findAll \n statusCode:" + statusCode);
 
         System.out.println("\n__________________________________\n");
@@ -25,10 +25,10 @@ public class Client {
         payload.put("email", "mpink@email.com");
         payload.put("password", "pwd123");
 
-        statusCode = restApi.saveUser(payload);
+        statusCode = restController.saveUser(payload);
         System.out.println("statusCode: "+ statusCode);
 
-        statusCode = restApi.listAllUsers();
+        statusCode = restController.listAllUsers();
         System.out.println("\n findAll \n statusCode:" + statusCode);
 
         System.out.println("\n__________________________________\n");
@@ -37,10 +37,10 @@ public class Client {
         payload.put("email", "mpink@email.com");
         payload.put("password", "pwd123");
 
-        statusCode = restApi.saveUser(payload);
+        statusCode = restController.saveUser(payload);
         System.out.println("statusCode: "+ statusCode);
 
-        statusCode = restApi.listAllUsers();
+        statusCode = restController.listAllUsers();
         System.out.println("\n findAll \n statusCode:" + statusCode);
     }
 

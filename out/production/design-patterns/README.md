@@ -20,7 +20,23 @@
 
 ##### *Singleton*
     Padrão que permite você garantir que uma classe tenha apeans uma instância,
-    enquanto você provê um ponto de acesso 'global' para essa instância
+    enquanto você provê um ponto de acesso 'global' para essa instância.
+
+---
+
+##### *Monostate*
+    Padrão com os mesmos critérios do Singleton, porém, trabalha com algo 
+    mutável e de forma implícita, podendo trazer alguns problemas para 
+    aplicações principalmente se seu time for “novo” e nunca tiver visto o 
+    código, podendo achar que está trabalhando com instancias diferentes do
+    objeto, mas está trabalhando com a mesma instância.
+
+---
+
+##### *Builder*
+    Padrão que separa a construção de um objeto complexo de sua representação
+    para que o mesmo processo de construção possa criar representações
+    diferentes.
 
 ---
 
@@ -32,7 +48,6 @@
 ---
 
 
-
 ## Padrão Estrutural
 
 <br>
@@ -40,6 +55,11 @@
 ##### *Adapter*
     Padrão que tem como objetivo converter a interface de uma classe em outra interface
     esperada pelo cliente. O Adapter permite a comunicação entre classes que não poderiam
-    trabalhar juntas devido à incompatibilidade de suas interfaces
+    trabalhar juntas devido à incompatibilidade de suas interfaces.
 
+---
+
+#### *Bridge*
+    Padrão que tem como objetivo desacoção uma abstração de sua implementação
+    para que os dois possam variar independentemente.
 ---
