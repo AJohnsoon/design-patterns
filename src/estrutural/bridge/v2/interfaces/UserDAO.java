@@ -1,2 +1,7 @@
-package src.estrutural.bridge.v2.interfaces;public interface UserDAO {
+package src.estrutural.bridge.v2.interfaces;
+
+import src.estrutural.bridge.v2.model.User;
+
+public interface UserDAO {
+    void save(User user);
 }

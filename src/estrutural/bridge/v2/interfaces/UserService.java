@@ -1,7 +1,6 @@
-package src.estrutural.bridge.v2.services.interfaces;
+package src.estrutural.bridge.v2.interfaces;
 
-import src.estrutural.bridge.v2.interfaces.UserDAO;
-import src.estrutural.bridge.v2.model.entities.User;
+import src.estrutural.bridge.v2.model.User;
 
 public abstract class UserService {
     protected UserDAO dao;
