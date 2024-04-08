@@ -60,7 +60,7 @@
 ---
 
 #### *Bridge*
-    Padrão que tem como objetivo desacoção uma abstração de sua implementação
+    Padrão que tem como objetivo desacoplar uma abstração de sua implementação
     para que os dois possam variar independentemente.
 
 ---
