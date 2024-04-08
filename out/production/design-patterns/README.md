@@ -3,28 +3,28 @@
 
 ## Padrão Criacional
 
-<br>
 
-##### *Factory Method*
+##### *<a href="./src/criacional/factory">Factory Method</a>* 
+
     Padrão que fornece uma 'interface' para criar objetos em uma
     superclasse, mas permite que as subclasses alterem o tipo de objeto que
     serão criados.
 
 ---
 
-##### *Abstract Factory*
+##### *<a href="./src/criacional/abstractFactory">Abstract Factory</a>*
     Padrão que permite que você produza famílias de objetos relacionados sem 
     ter que especificar suas classes concretas.
 
 ---
 
-##### *Singleton*
+##### *<a href="./src/criacional/singleton">Singleton</a>*
     Padrão que permite você garantir que uma classe tenha apeans uma instância,
     enquanto você provê um ponto de acesso 'global' para essa instância.
 
 ---
 
-##### *Monostate*
+##### *<a href="./src/criacional/monostate">Monostate</a>*
     Padrão com os mesmos critérios do Singleton, porém, trabalha com algo 
     mutável e de forma implícita, podendo trazer alguns problemas para 
     aplicações principalmente se seu time for “novo” e nunca tiver visto o 
@@ -33,14 +33,14 @@
 
 ---
 
-##### *Builder*
+##### *<a href="./src/criacional/builder">Builder</a>*
     Padrão que separa a construção de um objeto complexo de sua representação
     para que o mesmo processo de construção possa criar representações
     diferentes.
 
 ---
 
-#### *Prototype*
+#### *<a href="./src/criacional/prototype">Prototype</a>*
     Padrão que tem como objetivo criar um objeto a partir de um protótipo.
     Um objeto existente que já tenha um conjunto de atributos definidos, para
     a partir dessa premissa poder começar a evoluir o objeto.
@@ -62,4 +62,8 @@
 #### *Bridge*
     Padrão que tem como objetivo desacoção uma abstração de sua implementação
     para que os dois possam variar independentemente.
+
+
+#### *Composite*
+    
 ---

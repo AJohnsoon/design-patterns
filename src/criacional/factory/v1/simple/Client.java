@@ -20,7 +20,5 @@ public class Client  {
 		System.out.println("### instance POSTEGRES database");
 		Database postgresdb = DBFactory.instance("postegres");
 		System.out.println(postgresdb);
-
-
 	}
 }

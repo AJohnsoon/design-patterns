@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Folder implements FileSystemItem {
     private String name;
-    private List<FileSystemItem> childs;
+    private FileSystemItem[] childs;
 
-    public Folder (String name, List<FileSystemItem> childs) {
+    public Folder (String name, FileSystemItem[] childs) {
         this.name = name;
         this.childs = childs;
     }
