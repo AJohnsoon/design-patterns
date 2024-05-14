@@ -1,7 +1,8 @@
 package src.estrutural.composite.v1.model;
 
 import src.estrutural.composite.v1.interfaces.FileSystemItem;
-import java.util.List;
+
+import java.util.Arrays;
 
 public class Folder implements FileSystemItem {
     private String name;
@@ -15,8 +16,6 @@ public class Folder implements FileSystemItem {
     @Override
     public void print(String structure) {
         System.out.println(structure + name);
-        for (FileSystemItem child : childs){
-            child.print(structure + "| ");
-        }
+        Arrays.stream(childs).forEach(child -> child.print(structure + "| "));
     }
 }
