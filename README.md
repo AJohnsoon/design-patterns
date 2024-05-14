@@ -46,24 +46,30 @@
     a partir dessa premissa poder começar a evoluir o objeto.
 
 ---
+<br>
+<br>
 
 
 ## Padrão Estrutural
 
-<br>
+##### *<a href="./src/criacional/adapter">Adapter</a>*
 
-##### *Adapter*
     Padrão que tem como objetivo converter a interface de uma classe em outra interface
     esperada pelo cliente. O Adapter permite a comunicação entre classes que não poderiam
     trabalhar juntas devido à incompatibilidade de suas interfaces.
 
 ---
 
-#### *Bridge*
+##### *<a href="./src/criacional/bridge">Bridge</a>*
+
     Padrão que tem como objetivo desacoplar uma abstração de sua implementação
     para que os dois possam variar independentemente.
 
 ---
-#### *Composite*
-    
+
+##### *<a href="./src/criacional/composite">Composite</a>*
+
+    Padrão que tem como objetivo compor objetos em estruturas de árvore para
+    representar hierarquias (todo-parte). O composite permite que clientes 
+    tratem seus objetos indiviais e composições de objetos de maneira uniforme.
 ---
