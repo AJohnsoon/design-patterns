@@ -60,12 +60,10 @@
 ---
 
 #### *Bridge*
-    Padrão que tem como objetivo desacoplar uma abstração de sua implementação
+    Padrão que tem como objetivo desacoção uma abstração de sua implementação
     para que os dois possam variar independentemente.
 
 ---
 #### *Composite*
-    Padrão que tem como objetivo compor objetos em estruturas de árvore para
-    representar hierarquias (todo-parte). O composite permite que clientes 
-    tratem seus objetos indiviais e composições de objetos de maneira uniforme.
+    
 ---
