@@ -26,12 +26,12 @@
 
 ##### *<a href="./src/criacional/monostate">Monostate</a>*
     Padrão com critérios semelhantes ao Singleton, porém, ao contrário do Singleton,
-    ele não garante uma única instância da classe. 
+    ele não garante uma única instância da classe.
     Em vez disso, todos os objetos compartilham o mesmo estado, tornando-os mutáveis de forma implícita.
-    Isso pode criar confusão, especialmente para desenvolvedores que não estão familiarizados com o padrão, 
-    pois pode parecer que estão lidando com instâncias diferentes do objeto, 
-    quando na verdade estão lidando com a mesma instância e, portanto, 
-    com o mesmo estado compartilhado. 
+    Isso pode criar confusão, especialmente para desenvolvedores que não estão familiarizados com o padrão,
+    pois pode parecer que estão lidando com instâncias diferentes do objeto,
+    quando na verdade estão lidando com a mesma instância e, portanto,
+    com o mesmo estado compartilhado.
     Essa falta de clareza pode levar a problemas de compreensão e manutenção do código.
 
 ---
