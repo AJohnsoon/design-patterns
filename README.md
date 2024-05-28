@@ -19,20 +19,17 @@
 ---
 
 ##### *<a href="./src/criacional/singleton">Singleton</a>*
-    Padrão que permite você garantir que uma classe tenha apenass uma instância,
+    Padrão que permite você garantir que uma classe tenha apeans uma instância,
     enquanto você provê um ponto de acesso 'global' para essa instância.
 
 ---
 
 ##### *<a href="./src/criacional/monostate">Monostate</a>*
-    Padrão com critérios semelhantes ao Singleton, porém, ao contrário do Singleton,
-    ele não garante uma única instância da classe. 
-    Em vez disso, todos os objetos compartilham o mesmo estado, tornando-os mutáveis de forma implícita.
-    Isso pode criar confusão, especialmente para desenvolvedores que não estão familiarizados com o padrão, 
-    pois pode parecer que estão lidando com instâncias diferentes do objeto, 
-    quando na verdade estão lidando com a mesma instância e, portanto, 
-    com o mesmo estado compartilhado. 
-    Essa falta de clareza pode levar a problemas de compreensão e manutenção do código.
+    Padrão com os mesmos critérios do Singleton, porém, trabalha com algo 
+    mutável e de forma implícita, podendo trazer alguns problemas para 
+    aplicações principalmente se seu time for “novo” e nunca tiver visto o 
+    código, podendo achar que está trabalhando com instancias diferentes do
+    objeto, mas está trabalhando com a mesma instância.
 
 ---
 
@@ -76,8 +73,3 @@
     representar hierarquias (todo-parte). O composite permite que clientes 
     tratem seus objetos indiviais e composições de objetos de maneira uniforme.
 ---
-
-##### *<a href="./src/criacional/decorator">Decorator</a>*
-    Padrão que anexa responsalidades adicionais a um objeto dinamentamente.
-    Decorators oferece uma alteranativa flexivel (composição) ao uso de herança para extender
-    uma funcionalidade 
