@@ -78,6 +78,11 @@
 ---
 
 ##### *<a href="./src/criacional/decorator">Decorator</a>*
-    Padrão que anexa responsalidades adicionais a um objeto dinamentamente.
+    Padrão que anexa responsabilidades adicionais a um objeto dinamicamentamente.
     Decorators oferece uma alteranativa flexivel (composição) ao uso de herança para extender
-    uma funcionalidade 
+    uma funcionalidade
+---
+
+##### *<a href="./src/criacional/facade">Facade</a>*
+    Padrão que oferece uma interface única para um conjunto de interfaces de um subsistema. 
+    Ele define uma interface de nível mais elevado tornando o subsistema mais fácil de usar
